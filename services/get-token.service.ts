@@ -8,7 +8,7 @@ interface Props {
   idDispositivo?: string | null
 }
 
-async function getToken({
+export async function getToken({
   username,
   password,
   app = 'string',
@@ -29,5 +29,3 @@ async function getToken({
   // return data.data.token
   return tokenResponse.data.token
 }
-
-export default getToken

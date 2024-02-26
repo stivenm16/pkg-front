@@ -1,5 +1,5 @@
 import axios, { InternalAxiosRequestConfig } from 'axios'
-import getToken from '../services/get-token.service'
+import { getToken } from '../services'
 
 const updateHeader = async (request: InternalAxiosRequestConfig<any>) => {
   request.headers['Content-Type'] = 'application/json'
